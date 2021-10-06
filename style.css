@@ -1,0 +1,169 @@
+    body{
+        width: 70%;
+        margin-left: 15%;
+    }
+    h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 37px;
+        /* or 143% */
+
+        letter-spacing: 0.94201px;
+
+        /* Dark Grey/80 */
+
+        color: #101214;
+    }
+    h5{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 20px;
+        /* or 143% */
+
+        letter-spacing: 0.94201px;
+
+        /* Dark Grey/80 */
+
+        color: #101214; 
+    }
+    span{
+        text-decoration-line: underline;
+    }
+    .ksamp-logo{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 40px;
+        /* or 143% */
+
+        letter-spacing: 0.94201px;
+
+        /* Dark Grey/80 */
+
+        color:black; 
+    }
+    .inlay{
+/* k-samp-logo */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 18.1645px 9.08226px;
+
+position: static;
+width: 197.24px;
+height: 67.8px;
+left: 46.82px;
+top: 53.74px;
+
+background: #FFFFFF;
+border-radius: 9.99049px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 4.54113px 0px;
+    }
+
+.card{
+/* Frame 1997 */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 62.6676px 90.8226px;
+
+position: static;
+width: 215px;
+height: 105px;
+left: 0px;
+top: 0px;
+
+background: #DBECFF;
+border-radius: 6.35758px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+margin: 9.99049px 0px;
+    }
+p.thumb-tit{
+/* KSamples */
+
+
+position: static;
+width: 290.89px;
+height: 18.82px;
+left: 0px;
+top: 0px;
+
+font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+font-size: 20px;
+line-height: 21px;
+/* identical to box height, or 138% */
+
+letter-spacing: 0.427779px;
+
+/* Dark Grey/80 */
+
+color: #101214;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 3.6329px 0px;
+}
+.thumb-desc{
+/* Current project */
+
+
+position: static;
+width: 290.89px;
+height: 10.27px;
+left: 0px;
+top: 22.46px;
+
+font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+font-size: 15px;
+line-height: 16px;
+/* identical to box height, or 120% */
+
+letter-spacing: 0.213889px;
+
+/* Dark Grey/60 */
+
+color: #73808D;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 3.6329px 0px;
+}
