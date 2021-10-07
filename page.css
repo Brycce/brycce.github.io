@@ -1,10 +1,23 @@
 html{	
     cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAaCAMAAABigZc2AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFpJREFUeNp9jUEOwEAIAhn+/+imjbs1bC0XzQioSUAAYZs0mcVY051RbGXfFsyxibTVHXhuhXYlbuRGPbe7kz3g0wf679OuizDBdCaberLE4AsjGliD02eNugA+MQFAPqynHQAAAABJRU5ErkJggg==),auto;
-}   
-.header{
-    display: flex;
-flex-direction: row;
-align-items: center;
+} 
+
+
+div.header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: auto;
+    max-width: 800px;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+
+#head-content{
+    grid-column: 1 / 2;
+    grid-row: 1;
 }
 
 .off-site{
@@ -17,12 +30,17 @@ margin: 0px 50px;
 font-family: Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: bold;
-font-size: 25px;
+font-size: 20px;
 line-height: 35px;
-width: 126px;
+height: 120px;
+width: 118px;
+margin-top: 25px;
 background-color: #DBECFF;
 border-radius: 200px;
 transition: all 0.2s cubic-bezier(0.3, 0, 1, 1);
+
+grid-column: 2 / 2;
+grid-row: 1;
 ;
 /* identical to box height, or 131% */
 
@@ -36,27 +54,9 @@ color: #000000;
 
 .off-site:hover{
     border-radius: 10px;
-
+    width: 130px;
 }
 
-
-.head-content{
-
-/* Auto Layout */
-
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-
-    /* Inside Auto Layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 138px;
-
-}
 
 .backnav{
     font-family: Arial, Helvetica, sans-serif;
@@ -115,7 +115,40 @@ margin: 24px 0px;
         order: 2;
         flex-grow: 0;
         margin: 24px 0px;
-
-
-
 }
+
+
+h1{
+    color: #101214;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ 
+ h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;    
+    color: #73808D;
+ }
+
+ h3{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+ p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;    
+     max-width: 800px;
+     margin: auto;
+     color: #333333;
+     padding-top:40px;
+     padding-bottom:40px;
+     font-size: 18px;
+
+ }
+
+ .cont-container{
+     background-color:  #DBECFF;
+ }
