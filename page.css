@@ -1,0 +1,121 @@
+html{	
+    cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAaCAMAAABigZc2AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFpJREFUeNp9jUEOwEAIAhn+/+imjbs1bC0XzQioSUAAYZs0mcVY051RbGXfFsyxibTVHXhuhXYlbuRGPbe7kz3g0wf679OuizDBdCaberLE4AsjGliD02eNugA+MQFAPqynHQAAAABJRU5ErkJggg==),auto;
+}   
+.header{
+    display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.off-site{
+    /* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 50px;
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 35px;
+width: 126px;
+background-color: #DBECFF;
+border-radius: 200px;
+transition: all 0.2s cubic-bezier(0.3, 0, 1, 1);
+;
+/* identical to box height, or 131% */
+
+letter-spacing: 0.773809px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+}
+
+.off-site:hover{
+    border-radius: 10px;
+
+}
+
+
+.head-content{
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+    /* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 138px;
+
+}
+
+.backnav{
+    font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+letter-spacing: 6px;
+text-transform: uppercase;
+
+/* Dark Grey/60 */
+
+color: #73808D;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 24px 0px;
+}
+
+.proj-tittle{
+    font-family: Arial, Helvetica, sans-serif;
+    /* Dark Grey/80 */
+
+    color: #101214;
+    /* Inside Auto Layout */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 84px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+.proj-desc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+
+    /* Dark Grey/60 */
+
+    color: #73808D;
+
+    /* Inside Auto Layout */
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        margin: 24px 0px;
+
+
+
+}

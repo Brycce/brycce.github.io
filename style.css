@@ -1,4 +1,8 @@
-    body{
+    html{	
+        cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAaCAMAAABigZc2AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFpJREFUeNp9jUEOwEAIAhn+/+imjbs1bC0XzQioSUAAYZs0mcVY051RbGXfFsyxibTVHXhuhXYlbuRGPbe7kz3g0wf679OuizDBdCaberLE4AsjGliD02eNugA+MQFAPqynHQAAAABJRU5ErkJggg==),auto;
+}   
+   
+   body{
         width: 70%;
         max-width: 835px;
         margin: auto;
@@ -52,6 +56,17 @@
 
         color:black; 
     }
+
+    #yellow{
+   background-color: #FFEFD7;
+ }
+
+    #nuplogo{
+        height: 150px;
+        width: auto;
+
+    }
+
     .inlay{
 /* k-samp-logo */
 
@@ -88,7 +103,6 @@ margin: 4.54113px 0px;
 /* Auto Layout */
 
 display: flex;
-flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 62.6676px 90.8226px;
@@ -305,3 +319,8 @@ margin: 3.6329px 0px;
         width: 80%;
     }
 }
+
+
+
+
+ /* For page Templates */
