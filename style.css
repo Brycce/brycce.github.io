@@ -17,6 +17,10 @@
 
         color: #101214;
     }
+    h4.bio{
+        font-weight: normal;
+    }
+
     h5{
         font-family: Arial, Helvetica, sans-serif;
         font-style: normal;
@@ -169,12 +173,17 @@ flex-grow: 0;
 margin: 3.6329px 0px;
 }
 
+.thumbnail{
+    -webkit-column-break-inside: auto;
+    page-break-inside: auto;
+    break-inside: auto;
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    max-width: ;
 }
 
 #ksamp{
@@ -217,4 +226,82 @@ margin: 3.6329px 0px;
 #orcasat{
     grid-column: 3 / 3;
     grid-row: 5;
+}
+
+/* --- Media Queries --- */
+/*mobile responsive*/
+/* column collapse*/
+
+@media (max-width:1150px){
+    .wrapper{
+        display: column;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    #ksamp{
+        grid-column: 1 / 1;
+        grid-row: 1;
+    }
+    
+    #nupub{
+        grid-column: 1 / 1;
+        grid-row: 2;
+    }
+    #nebula{
+        grid-column: 1 / 1;
+        grid-row: 3;
+    }
+    #lecshare{
+        grid-column: 1 / 1;
+        grid-row: 4;
+    }
+    #myfair{
+        grid-column: 1 / 1;
+        grid-row: 5;
+    }
+    #lurndit{
+        grid-column: 1 / 1;
+        grid-row: 6;
+    }
+    #podly{
+        grid-column: 1 / 1;
+        grid-row: 7;
+    }
+    #courseup{
+        grid-column: 1 / 1;
+        grid-row: 8;
+    }
+    #vikelabs{
+        grid-column: 1 / 1;
+        grid-row: 9;
+    }
+    #orcasat{
+        grid-column: 1 / 1;
+        grid-row: 10;
+    }
+    
+}
+/* header shrink*/
+
+@media (max-width:670px){
+    .card{
+        width: 125px;
+        height:75px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    .bio{
+        font-size: 17px;
+        line-height: 19px;
+    }
+    section.header.bio{
+        font-size: 17px;
+        line-height: 19px;
+    }
+    body{
+        width: 80%;
+    }
 }
