@@ -6,6 +6,9 @@
    a {
        text-decoration: none;
    }
+   nav.a{
+       color: #101214;
+   }
    body{
         width: 70%;
         max-width: 835px;
