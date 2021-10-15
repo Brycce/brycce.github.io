@@ -7,8 +7,8 @@
        text-decoration: none;
    }
    nav.a{
-       color: #101214;
-   }
+    color: #101214;
+}
    body{
         width: 70%;
         max-width: 835px;
@@ -282,7 +282,7 @@ margin: 3.6329px 0px;
     grid-column: 1 / 3;
     grid-row: 5;
 }
-#orcasat{
+#workday{
     grid-column: 3 / 3;
     grid-row: 5;
 }
@@ -365,61 +365,5 @@ margin: 3.6329px 0px;
     }
 }
 
-
  /* resume */
 
- .resume{
-
- }
-
-.name{
-    font-size: 30px;
-}
-.contact{
-    font-size: 25px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10ååpx;
-    grid-auto-rows: minmax(50px, auto);
-}
-
-.email{
-    font-size: 15px;
-    grid-column: 1 / 3;
-    grid-row: 1;
-}
-.phone{
-    font-size: 15px;
-    grid-column: 2 / 3;
-    grid-row: 1;
-}
-
-.local{
-    font-size: 15px;
-    grid-column: 3 / 3;
-    grid-row: 1;
-}
-
-.exp-row{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10opx;
-    grid-auto-rows: minmax(100px, auto);
-}
-
-.exp-head{
-    font-size: 20px;
-    grid-column: 1 / 3;
-    grid-row: 1;
-
-}
-
-.exp-date{
-    font-size: 20px;
-    grid-column: 3 / 3;
-    grid-row: 1;
-}
-
-.experience{
-    font-size: 15px;
-}
