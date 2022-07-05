@@ -3,6 +3,13 @@ html{
     margin-right: 100px;
 }
 
+.contact{
+    font-family: 'Be Vietnam Pro',  sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .wrapper{
 display: flex;
 flex-direction: row;
