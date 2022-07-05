@@ -1,3 +1,21 @@
+@media only screen and (max-width: 1215px) {
+.wrapper{
+    flex-direction: column;
+}
+html{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media only screen and (min-width: 1215px) {
+    .wrapper{
+        flex-direction: row;
+    }
+}
+
+
+
+}
 html{
     margin-left: 100px;
     margin-right: 100px;
@@ -12,10 +30,9 @@ html{
 
 .wrapper{
 display: flex;
-flex-direction: row;
 align-items: flex-start;
 padding: 0px;
-gap: 252px;
+gap: 15%;
 }
 a{
     text-decoration: underline;
