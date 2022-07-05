@@ -13,12 +13,15 @@ html{
     }
 }
 
-
-
 }
 html{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contact:hover{
+    background:#EFEFEF ;
+
 }
 
 .contact{
