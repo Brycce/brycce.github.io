@@ -1,0 +1,62 @@
+import type { CSSProperties, DetailedHTMLFactory, ForwardRefExoticComponent, HTMLAttributes, PropsWithoutRef, ReactHTML, RefAttributes, SVGAttributes } from "react";
+import { Options, MotionEvent, CustomPointerEvent, ViewEvent } from "@motionone/dom";
+import type { svgElements, htmlElements } from "./utils/supported-elements";
+export interface MotionEventHandlers {
+    onMotionStart?: (event: MotionEvent) => void;
+    onMotionComplete?: (event: MotionEvent) => void;
+    onHoverStart?: (event: CustomPointerEvent) => void;
+    onHoverEnd?: (event: CustomPointerEvent) => void;
+    onPressStart?: (event: CustomPointerEvent) => void;
+    onPressEnd?: (event: CustomPointerEvent) => void;
+    onViewEnter?: (event: ViewEvent) => void;
+    onViewLeave?: (event: ViewEvent) => void;
+}
+export interface ElementProps {
+    style: CSSProperties;
+}
+declare type UnionStringArray<T extends Readonly<string[]>> = T[number];
+export declare type HTMLElements = UnionStringArray<typeof htmlElements>;
+export declare type SVGElements = UnionStringArray<typeof svgElements>;
+/**
+ * @public
+ */
+export declare type ForwardRefComponent<T, P> = ForwardRefExoticComponent<PropsWithoutRef<P> & RefAttributes<T>>;
+/**
+ * Support for React component props
+ */
+declare type UnwrapFactoryAttributes<F> = F extends DetailedHTMLFactory<infer P, any> ? P : never;
+declare type UnwrapFactoryElement<F> = F extends DetailedHTMLFactory<any, infer P> ? P : never;
+declare type HTMLAttributesWithoutMotionProps<Attributes extends HTMLAttributes<Element>, Element extends HTMLElement> = {
+    [K in Exclude<keyof Attributes, keyof Options>]?: Attributes[K];
+};
+/**
+ * @public
+ */
+export declare type MotionHTMLProps<TagName extends keyof ReactHTML> = HTMLAttributesWithoutMotionProps<UnwrapFactoryAttributes<ReactHTML[TagName]>, UnwrapFactoryElement<ReactHTML[TagName]>> & Options & MotionEventHandlers;
+/**
+ * Motion-optimised versions of React's HTML components.
+ *
+ * @public
+ */
+export declare type MotionHTMLComponents = {
+    [K in HTMLElements]: ForwardRefComponent<UnwrapFactoryElement<ReactHTML[K]>, MotionHTMLProps<K>>;
+};
+interface SVGAttributesWithoutOptions<T> extends Pick<SVGAttributes<T>, Exclude<keyof SVGAttributes<T>, keyof Options>> {
+}
+declare type UnwrapSVGFactoryElement<F> = F extends React.SVGProps<infer P> ? P : never;
+/**
+ * @public
+ */
+export interface MotionSVGProps<T> extends SVGAttributesWithoutOptions<T>, Options, MotionEventHandlers {
+}
+/**
+ * Motion-optimised versions of React's SVG components.
+ *
+ * @public
+ */
+export declare type MotionSVGComponents = {
+    [K in SVGElements]: ForwardRefComponent<UnwrapSVGFactoryElement<JSX.IntrinsicElements[K]>, MotionSVGProps<UnwrapSVGFactoryElement<JSX.IntrinsicElements[K]>>>;
+};
+export declare type MotionDOMComponents = MotionHTMLComponents & MotionSVGComponents;
+export {};
+//# sourceMappingURL=types.d.ts.map
